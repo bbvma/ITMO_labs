@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <_name>MyKantor</_name>
+    <id>MyKantor</id>
+    <param name="s_l"       type="int"   min="1" max="1000" gui-text="Side Length (px):">124.0</param>
+    <param name="c_x"       type="float"   min="0.01"  max="10000" _gui-text="x (px):">10.0</param>
+    <param name="c_y"       type="float"   min="0.01"  max="10000" _gui-text="y (px):">40.0</param>	
+    <param name="n"         type="int"   min="1" max="1000" gui-text="Глубина рекурсии">0</param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu _name="Render"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">MyKantor.py</command>
+    </script>
+</inkscape-extension>
